@@ -1,0 +1,14 @@
+0 D
+1 5
+2 0
+3 0
+@
+4
+@
+CRA
+CSR 6
+HALT
+HALT
+ADDI 3
+
+JMPI 6
