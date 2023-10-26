@@ -1,14 +1,21 @@
-0 D
-1 5
+0 3
+1 4
 2 0
-3 0
+3 7
+4 8
 @
-4
+5 
 @
 CRA
-CSR 6
+CSR 8
 HALT
 HALT
-ADDI 3
-
-JMPI 6
+ADDI 0
+STA 2
+CRA
+ADDI 1
+STAI 0
+CRA
+ADD 2
+STAI 1
+JMPI 8
