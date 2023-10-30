@@ -8,7 +8,7 @@ void* contarLineas(void *entrada)
     char* nombreFich = (char*)entrada;
     char cadena[100];
     int *nLineas;
-    nLineas = malloc (sizeof(int));
+    nLineas = calloc (1, sizeof(int));
     FILE* fichero;
     if((fichero=fopen(nombreFich, "r"))==NULL)
     {
@@ -17,7 +17,7 @@ void* contarLineas(void *entrada)
     }
     while((fgets(cadena, 100, fichero)) != NULL)
     {
-        *nLineas++;
+        (*nLineas)++;
     }
 
     fclose(fichero);
@@ -50,8 +50,11 @@ int main(int argc, char* argv[])
     for (int i = 0; i<nFicheros; i++) {
         if((pthread_join(*(hebras+i), (void**) &lineas)))
         {
-            total += *lineas;
+            perror("pthread_join() error\n");
+            printf("Errno value = %d", errno);
+            exit(EXIT_FAILURE);
         }
+        total += *lineas;
     }
 
     printf("El total de lineas de los ficheros es %d\n", total);
