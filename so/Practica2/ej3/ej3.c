@@ -16,7 +16,7 @@ void* sumVectorPart(void* arg) {
     ThreadData* data = (ThreadData*)arg;
     int *sum;
     sum = calloc(1, sizeof(int));
-    for (int i = data->start; i < data->end; ++i) {
+    for (int i = data->start; i < data->end; i++) {
         *sum += data->vector[i];
     }
     printf("Hebra: %d\n", *sum);
