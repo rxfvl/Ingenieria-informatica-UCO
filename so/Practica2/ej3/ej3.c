@@ -1,93 +1,82 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <errno.h>
 #include <pthread.h>
-#include <time.h>
 
-struct hebras {
-    int *v;
-    int inicio;
-    int final;
-};
+#define VECTOR_SIZE 10
 
-void *sumaVector(void* entrada)
-{
-    struct hebras* vectStruct = (struct hebras*)entrada;
-    int *suma;
-    suma = malloc (sizeof(int));
+// Estructura para pasar datos a cada hilo
+typedef struct {
+    int* vector;
+    int start;
+    int end;
+} ThreadData;
 
-    
-    for (int i = vectStruct[1].inicio; i<vectStruct[1].final; i++)
-    {
-        *suma += vectStruct->v[i];
+// Función para sumar elementos en una parte del vector
+void* sumVectorPart(void* arg) {
+    ThreadData* data = (ThreadData*)arg;
+    int *sum;
+    sum = calloc(1, sizeof(int));
+    for (int i = data->start; i < data->end; ++i) {
+        *sum += data->vector[i];
     }
-
-    pthread_exit((void*) suma);
+    printf("Hebra: %d\n", *sum);
+    pthread_exit((void*) sum);
 }
 
-int main(int argc, char* argv[])
-{
-    if (argc != 2)
-    {
-        printf("SYNTAX ERROR: Se espera ./ej3 <numero(2/5)>");
-        exit(EXIT_FAILURE);
+int main(int argc, char* argv[]) {
+    int numThreads = 0, *valor, test = 0;
+
+    if (argc != 2) {
+        printf("Uso: ./programa [2 o 5]\n");
+        return 1;
     }
 
-    srand(time(NULL));
-    int nHebras = atoi(argv[1]);
-    int n=0;
-    struct hebras* vectorStruct;
-    int *vectorRand;
-    int *valor, total;
-    int test = 0;
-    int inicio = 0;
-    int final = 4;
-    pthread_t* hebras;
-
-    hebras = malloc (nHebras*sizeof(pthread_t));
-    vectorRand = malloc (10*sizeof(int));
-    vectorStruct = malloc(nHebras*sizeof(struct hebras));
-
-    for(int i = 0; i<10; i++) {
-        *(vectorRand+i) = rand() % 9 + 1;
-        printf("%d ", *(vectorRand+i));
-        test += *(vectorRand+i);
-        
+    // Obtener el número de hilos desde el argumento
+    numThreads = atoi(argv[1]);
+    if (numThreads != 2 && numThreads != 5) {
+        printf("El número de hilos debe ser 2 o 5\n");
+        return 1;
     }
-    printf("\n");
-    printf("COMPROBACION: %d\n", test);
 
-    switch(nHebras)
-    {
-        case 2:
-            for(int i=0; i<nHebras; i++) {
-                vectorStruct[i].v = vectorRand;
-                vectorStruct[i].inicio = (inicio + 5)*i;
-                vectorStruct[i].final = final + (5*i);
-            }
+    int vector[VECTOR_SIZE];
 
-            for(int i = 0; i<2; i++) {
-                if((pthread_create((hebras+i), NULL, sumaVector, (void*)&vectorStruct[i])))
-                {
-                    perror("pthread_create() error\n");
-                    printf("Errno value = %d\n", errno);
-                    exit(EXIT_FAILURE);
-                }
-                inicio+=4;
-                final = inicio + 5;
-            }
-
-            for(int i = 0; i<2; i++) {
-                if((pthread_join(*(hebras+i), (void**)&valor)))
-                {
-                    perror("pthread_join() error\n");
-                    printf("Errno value = %d", errno);
-                    exit(EXIT_FAILURE);
-                }
-
-                total += *valor;
-                printf("El total es %d\n", total);
-            }
-            break;
+    // Rellena el vector con números aleatorios entre 1 y 9
+    for (int i = 0; i < VECTOR_SIZE; ++i) {
+        vector[i] = rand() % 9 + 1;
+        printf("%d ", vector[i]);
+        test += vector[i];
     }
+    printf("\nCOMPROBACION = %d\n", test);
+
+    pthread_t threads[numThreads];
+    ThreadData threadData[numThreads];
+    int elementsPerThread = VECTOR_SIZE / numThreads;
+    
+    // Divide el trabajo entre los hilos
+    for (int i = 0; i < numThreads; ++i) {
+        threadData[i].vector = vector;
+        threadData[i].start = i * elementsPerThread;
+        threadData[i].end = (i + 1) * elementsPerThread;
+
+        if (i == numThreads - 1) {
+            // Asegura que el último hilo maneje los elementos restantes si no son divisibles uniformemente
+            threadData[i].end = VECTOR_SIZE;
+        }
+
+        // Crea los hilos y calcula la suma parcial para cada parte del vector
+        pthread_create(&threads[i], NULL, sumVectorPart, &threadData[i]);
+    }
+
+    int totalSum = 0;
+
+    // Espera a que todos los hilos terminen y obtiene la suma total
+    for (int i = 0; i < numThreads; ++i) {
+        pthread_join(threads[i], (void**) &valor);
+        totalSum += *valor;
+    }
+
+    // Muestra la suma total
+    printf("La suma total es: %d\n", totalSum);
+
+    return 0;
 }
