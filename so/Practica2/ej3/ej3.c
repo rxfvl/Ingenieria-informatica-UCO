@@ -17,7 +17,7 @@ void *sumaVector(void* entrada)
     suma = malloc (sizeof(int));
 
     
-    for (int i = vectStruct->inicio; i<vectStruct->final; i++)
+    for (int i = vectStruct[1].inicio; i<vectStruct[1].final; i++)
     {
         *suma += vectStruct->v[i];
     }
@@ -40,6 +40,8 @@ int main(int argc, char* argv[])
     int *vectorRand;
     int *valor, total;
     int test = 0;
+    int inicio = 0;
+    int final = 4;
     pthread_t* hebras;
 
     hebras = malloc (nHebras*sizeof(pthread_t));
@@ -58,19 +60,21 @@ int main(int argc, char* argv[])
     switch(nHebras)
     {
         case 2:
-            for(int i = 0; i<2; i++) {
+            for(int i=0; i<nHebras; i++) {
                 vectorStruct[i].v = vectorRand;
-                vectorStruct[i].inicio = n;
-                vectorStruct[i].final = n+4;
+                vectorStruct[i].inicio = (inicio + 5)*i;
+                vectorStruct[i].final = final + (5*i);
+            }
 
-                n += 5;
-
-                if((pthread_create((hebras+i), NULL, sumaVector, (void*)vectorStruct)))
+            for(int i = 0; i<2; i++) {
+                if((pthread_create((hebras+i), NULL, sumaVector, (void*)&vectorStruct[i])))
                 {
                     perror("pthread_create() error\n");
                     printf("Errno value = %d\n", errno);
                     exit(EXIT_FAILURE);
                 }
+                inicio+=4;
+                final = inicio + 5;
             }
 
             for(int i = 0; i<2; i++) {
