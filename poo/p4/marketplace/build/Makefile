@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/poo/p4/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/poo/p4/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/poo/p4/marketplace/build/CMakeFiles /home/rafa/Escritorio/poo/p4/marketplace/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/CMakeFiles /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/poo/p4/marketplace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,6 +198,84 @@ person-main/fast:
 .PHONY : person-main/fast
 
 #=============================================================================
+# Target rules for targets named product
+
+# Build rule for target.
+product: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 product
+.PHONY : product
+
+# fast build rule for target.
+product/fast:
+	$(MAKE) $(MAKESILENT) -f src/product/CMakeFiles/product.dir/build.make src/product/CMakeFiles/product.dir/build
+.PHONY : product/fast
+
+#=============================================================================
+# Target rules for targets named product-main
+
+# Build rule for target.
+product-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 product-main
+.PHONY : product-main
+
+# fast build rule for target.
+product-main/fast:
+	$(MAKE) $(MAKESILENT) -f src/product/CMakeFiles/product-main.dir/build.make src/product/CMakeFiles/product-main.dir/build
+.PHONY : product-main/fast
+
+#=============================================================================
+# Target rules for targets named tv
+
+# Build rule for target.
+tv: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tv
+.PHONY : tv
+
+# fast build rule for target.
+tv/fast:
+	$(MAKE) $(MAKESILENT) -f src/tv/CMakeFiles/tv.dir/build.make src/tv/CMakeFiles/tv.dir/build
+.PHONY : tv/fast
+
+#=============================================================================
+# Target rules for targets named tv-main
+
+# Build rule for target.
+tv-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tv-main
+.PHONY : tv-main
+
+# fast build rule for target.
+tv-main/fast:
+	$(MAKE) $(MAKESILENT) -f src/tv/CMakeFiles/tv-main.dir/build.make src/tv/CMakeFiles/tv-main.dir/build
+.PHONY : tv-main/fast
+
+#=============================================================================
+# Target rules for targets named computer
+
+# Build rule for target.
+computer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer
+.PHONY : computer
+
+# fast build rule for target.
+computer/fast:
+	$(MAKE) $(MAKESILENT) -f src/computer/CMakeFiles/computer.dir/build.make src/computer/CMakeFiles/computer.dir/build
+.PHONY : computer/fast
+
+#=============================================================================
+# Target rules for targets named computer-main
+
+# Build rule for target.
+computer-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer-main
+.PHONY : computer-main
+
+# fast build rule for target.
+computer-main/fast:
+	$(MAKE) $(MAKESILENT) -f src/computer/CMakeFiles/computer-main.dir/build.make src/computer/CMakeFiles/computer-main.dir/build
+.PHONY : computer-main/fast
+
+#=============================================================================
 # Target rules for targets named person-test
 
 # Build rule for target.
@@ -209,6 +287,45 @@ person-test: cmake_check_build_system
 person-test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/build
 .PHONY : person-test/fast
+
+#=============================================================================
+# Target rules for targets named product-test
+
+# Build rule for target.
+product-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 product-test
+.PHONY : product-test
+
+# fast build rule for target.
+product-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/build
+.PHONY : product-test/fast
+
+#=============================================================================
+# Target rules for targets named tv-test
+
+# Build rule for target.
+tv-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tv-test
+.PHONY : tv-test
+
+# fast build rule for target.
+tv-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/build
+.PHONY : tv-test/fast
+
+#=============================================================================
+# Target rules for targets named computer-test
+
+# Build rule for target.
+computer-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 computer-test
+.PHONY : computer-test
+
+# fast build rule for target.
+computer-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/build
+.PHONY : computer-test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -275,6 +392,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... computer"
+	@echo "... computer-main"
+	@echo "... computer-test"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
@@ -282,6 +402,12 @@ help:
 	@echo "... person"
 	@echo "... person-main"
 	@echo "... person-test"
+	@echo "... product"
+	@echo "... product-main"
+	@echo "... product-test"
+	@echo "... tv"
+	@echo "... tv-main"
+	@echo "... tv-test"
 .PHONY : help
 
 

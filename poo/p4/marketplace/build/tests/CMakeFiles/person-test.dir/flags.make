@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rafa/Escritorio/poo/p4/marketplace/src/person -isystem /home/rafa/Escritorio/poo/p4/marketplace/build/_deps/googletest-src/googletest/include -isystem /home/rafa/Escritorio/poo/p4/marketplace/build/_deps/googletest-src/googletest -isystem /home/rafa/Escritorio/poo/p4/marketplace/build/_deps/googletest-src/googlemock/include -isystem /home/rafa/Escritorio/poo/p4/marketplace/build/_deps/googletest-src/googlemock
+CXX_INCLUDES = -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/person -isystem /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/_deps/googletest-src/googletest/include -isystem /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/_deps/googletest-src/googletest -isystem /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/_deps/googletest-src/googlemock/include -isystem /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/_deps/googletest-src/googlemock
 
 CXX_FLAGS = -std=gnu++17
 

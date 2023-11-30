@@ -24,14 +24,14 @@ target_link_libraries(product-test
 add_test(product_gtests product-test)
 
 # Testing tv library
-#add_executable(tv-test tv-test.cc)
-#target_link_libraries(tv-test
-# PRIVATE GTest::GTest tv)
-#add_test(tv_gtests tv-test)
+add_executable(tv-test tv-test.cc)
+target_link_libraries(tv-test
+ PRIVATE GTest::GTest tv)
+add_test(tv_gtests tv-test)
 
 # Testing computer library
-#add_executable(computer-test computer-test.cc)
-#target_link_libraries(computer-test
-# PRIVATE GTest::GTest computer)
-#add_test(computer_gtests computer-test)
+add_executable(computer-test computer-test.cc)
+target_link_libraries(computer-test
+ PRIVATE GTest::GTest computer)
+add_test(computer_gtests computer-test)
 
