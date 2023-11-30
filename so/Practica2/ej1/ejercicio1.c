@@ -48,6 +48,7 @@ int main()
 
         total += *n;
     }
+    free(hebras);
     printf("-----------------------------------\n");
     printf("TOTAL = %f\n", total);
 }

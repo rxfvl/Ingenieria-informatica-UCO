@@ -56,7 +56,7 @@ int main(int argc, char* argv[])
         }
         total += *lineas;
     }
-
+    free(hebras);
     printf("El total de lineas de los ficheros es %d\n", total);
 
 }
