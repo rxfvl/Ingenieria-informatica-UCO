@@ -17,9 +17,8 @@ class Basket
 
     public:
         Basket(float total = 0.0){total_ = total;}
-        bool exist(int id);
-        void AddProduct(std::string nombre, int id);
-        bool DeleteProduct(int id);
+        void AddProduct(Product producto);
+        bool DeleteProduct(Product producto);
         void DeleteBasket();
 
         int GetSize();
