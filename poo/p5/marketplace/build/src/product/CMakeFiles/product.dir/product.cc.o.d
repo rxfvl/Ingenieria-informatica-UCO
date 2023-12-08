@@ -1,7 +1,7 @@
 src/product/CMakeFiles/product.dir/product.cc.o: \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/product/product.cc \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/product/product.h \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

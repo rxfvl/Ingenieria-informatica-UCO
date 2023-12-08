@@ -1,4 +1,4 @@
-# Install script for directory: /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src
+# Install script for directory: /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,10 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/person/cmake_install.cmake")
-  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/product/cmake_install.cmake")
-  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/tv/cmake_install.cmake")
-  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/tv/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/basket/cmake_install.cmake")
 
 endif()
 

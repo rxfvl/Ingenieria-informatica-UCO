@@ -1,8 +1,8 @@
 src/computer/CMakeFiles/computer.dir/computer.cc.o: \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/computer/computer.cc \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer/computer.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/computer/computer.h \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/product/product.h \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer/computer.h \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

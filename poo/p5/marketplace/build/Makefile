@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/CMakeFiles /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -276,6 +276,32 @@ computer-main/fast:
 .PHONY : computer-main/fast
 
 #=============================================================================
+# Target rules for targets named basket
+
+# Build rule for target.
+basket: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basket
+.PHONY : basket
+
+# fast build rule for target.
+basket/fast:
+	$(MAKE) $(MAKESILENT) -f src/basket/CMakeFiles/basket.dir/build.make src/basket/CMakeFiles/basket.dir/build
+.PHONY : basket/fast
+
+#=============================================================================
+# Target rules for targets named basket-main
+
+# Build rule for target.
+basket-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basket-main
+.PHONY : basket-main
+
+# fast build rule for target.
+basket-main/fast:
+	$(MAKE) $(MAKESILENT) -f src/basket/CMakeFiles/basket-main.dir/build.make src/basket/CMakeFiles/basket-main.dir/build
+.PHONY : basket-main/fast
+
+#=============================================================================
 # Target rules for targets named person-test
 
 # Build rule for target.
@@ -326,6 +352,19 @@ computer-test: cmake_check_build_system
 computer-test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/build
 .PHONY : computer-test/fast
+
+#=============================================================================
+# Target rules for targets named basket-test
+
+# Build rule for target.
+basket-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basket-test
+.PHONY : basket-test
+
+# fast build rule for target.
+basket-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/build
+.PHONY : basket-test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -392,6 +431,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... basket"
+	@echo "... basket-main"
+	@echo "... basket-test"
 	@echo "... computer"
 	@echo "... computer-main"
 	@echo "... computer-test"

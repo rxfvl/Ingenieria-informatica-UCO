@@ -1,5 +1,5 @@
 src/tv/CMakeFiles/tv-main.dir/tv-main.cc.o: \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/tv/tv-main.cc \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/tv/tv-main.cc \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,5 +146,5 @@ src/tv/CMakeFiles/tv-main.dir/tv-main.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/tv/tv.h \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/product/product.h
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/tv/tv.h \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.h

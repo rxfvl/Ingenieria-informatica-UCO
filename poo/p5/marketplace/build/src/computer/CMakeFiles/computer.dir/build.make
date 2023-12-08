@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build
 
 # Include any dependencies generated for this target.
 include src/computer/CMakeFiles/computer.dir/depend.make
@@ -72,16 +72,16 @@ include src/computer/CMakeFiles/computer.dir/flags.make
 src/computer/CMakeFiles/computer.dir/computer.cc.o: src/computer/CMakeFiles/computer.dir/flags.make
 src/computer/CMakeFiles/computer.dir/computer.cc.o: ../src/computer/computer.cc
 src/computer/CMakeFiles/computer.dir/computer.cc.o: src/computer/CMakeFiles/computer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/computer/CMakeFiles/computer.dir/computer.cc.o"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/computer/CMakeFiles/computer.dir/computer.cc.o -MF CMakeFiles/computer.dir/computer.cc.o.d -o CMakeFiles/computer.dir/computer.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/computer/computer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/computer/CMakeFiles/computer.dir/computer.cc.o"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/computer/CMakeFiles/computer.dir/computer.cc.o -MF CMakeFiles/computer.dir/computer.cc.o.d -o CMakeFiles/computer.dir/computer.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer/computer.cc
 
 src/computer/CMakeFiles/computer.dir/computer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/computer.dir/computer.cc.i"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/computer/computer.cc > CMakeFiles/computer.dir/computer.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer/computer.cc > CMakeFiles/computer.dir/computer.cc.i
 
 src/computer/CMakeFiles/computer.dir/computer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/computer.dir/computer.cc.s"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/computer/computer.cc -o CMakeFiles/computer.dir/computer.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer/computer.cc -o CMakeFiles/computer.dir/computer.cc.s
 
 # Object files for target computer
 computer_OBJECTS = \
@@ -93,19 +93,19 @@ computer_EXTERNAL_OBJECTS =
 src/computer/libcomputer.a: src/computer/CMakeFiles/computer.dir/computer.cc.o
 src/computer/libcomputer.a: src/computer/CMakeFiles/computer.dir/build.make
 src/computer/libcomputer.a: src/computer/CMakeFiles/computer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcomputer.a"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer && $(CMAKE_COMMAND) -P CMakeFiles/computer.dir/cmake_clean_target.cmake
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/computer.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcomputer.a"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer && $(CMAKE_COMMAND) -P CMakeFiles/computer.dir/cmake_clean_target.cmake
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/computer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/computer/CMakeFiles/computer.dir/build: src/computer/libcomputer.a
 .PHONY : src/computer/CMakeFiles/computer.dir/build
 
 src/computer/CMakeFiles/computer.dir/clean:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer && $(CMAKE_COMMAND) -P CMakeFiles/computer.dir/cmake_clean.cmake
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer && $(CMAKE_COMMAND) -P CMakeFiles/computer.dir/cmake_clean.cmake
 .PHONY : src/computer/CMakeFiles/computer.dir/clean
 
 src/computer/CMakeFiles/computer.dir/depend:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/computer /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/build/src/computer/CMakeFiles/computer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/computer/CMakeFiles/computer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/computer/CMakeFiles/computer.dir/depend
 

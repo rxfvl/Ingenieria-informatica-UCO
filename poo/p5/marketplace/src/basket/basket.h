@@ -19,9 +19,10 @@ class Basket
         Basket(float total = 0.0){total_ = total;}
         void AddProduct(Product producto);
         bool DeleteProduct(Product producto);
+        bool DeleteProduct(std::string id);
         void DeleteBasket();
 
-        int GetSize();
+        int GetSize()  {return product_list_.size();}
         float GetTotal() {return total_;}
         std::vector<std::string> GetIds();
         std::vector<int> GetQs(); 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p4/marketplace/src/computer
+# Install script for directory: /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
