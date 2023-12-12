@@ -44,11 +44,11 @@ add_test(basket_gtests basket-test)
 # Testing client library
 add_executable(client-test client-test.cc)
 target_link_libraries(client-test
- PRIVATE GTest::GTest client basket product person)
+ PRIVATE GTest::GTest client basket person)
 add_test(client_gtests client-test)
 
 # Testing seller library
 add_executable(seller-test seller-test.cc)
 target_link_libraries(seller-test
- PRIVATE GTest::GTest basket product person)
+ PRIVATE GTest::GTest seller basket person)
 add_test(seller_gtests seller-test)

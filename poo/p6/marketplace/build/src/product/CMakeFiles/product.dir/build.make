@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build
 
 # Include any dependencies generated for this target.
 include src/product/CMakeFiles/product.dir/depend.make
@@ -72,16 +72,16 @@ include src/product/CMakeFiles/product.dir/flags.make
 src/product/CMakeFiles/product.dir/product.cc.o: src/product/CMakeFiles/product.dir/flags.make
 src/product/CMakeFiles/product.dir/product.cc.o: ../src/product/product.cc
 src/product/CMakeFiles/product.dir/product.cc.o: src/product/CMakeFiles/product.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/product/CMakeFiles/product.dir/product.cc.o"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/product/CMakeFiles/product.dir/product.cc.o -MF CMakeFiles/product.dir/product.cc.o.d -o CMakeFiles/product.dir/product.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/product/CMakeFiles/product.dir/product.cc.o"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/product/CMakeFiles/product.dir/product.cc.o -MF CMakeFiles/product.dir/product.cc.o.d -o CMakeFiles/product.dir/product.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/product/product.cc
 
 src/product/CMakeFiles/product.dir/product.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/product.dir/product.cc.i"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.cc > CMakeFiles/product.dir/product.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/product/product.cc > CMakeFiles/product.dir/product.cc.i
 
 src/product/CMakeFiles/product.dir/product.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/product.dir/product.cc.s"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.cc -o CMakeFiles/product.dir/product.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/product/product.cc -o CMakeFiles/product.dir/product.cc.s
 
 # Object files for target product
 product_OBJECTS = \
@@ -93,19 +93,19 @@ product_EXTERNAL_OBJECTS =
 src/product/libproduct.a: src/product/CMakeFiles/product.dir/product.cc.o
 src/product/libproduct.a: src/product/CMakeFiles/product.dir/build.make
 src/product/libproduct.a: src/product/CMakeFiles/product.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libproduct.a"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product && $(CMAKE_COMMAND) -P CMakeFiles/product.dir/cmake_clean_target.cmake
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/product.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libproduct.a"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product && $(CMAKE_COMMAND) -P CMakeFiles/product.dir/cmake_clean_target.cmake
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/product.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/product/CMakeFiles/product.dir/build: src/product/libproduct.a
 .PHONY : src/product/CMakeFiles/product.dir/build
 
 src/product/CMakeFiles/product.dir/clean:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product && $(CMAKE_COMMAND) -P CMakeFiles/product.dir/cmake_clean.cmake
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product && $(CMAKE_COMMAND) -P CMakeFiles/product.dir/cmake_clean.cmake
 .PHONY : src/product/CMakeFiles/product.dir/clean
 
 src/product/CMakeFiles/product.dir/depend:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product/CMakeFiles/product.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/product /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product/CMakeFiles/product.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/product/CMakeFiles/product.dir/depend
 

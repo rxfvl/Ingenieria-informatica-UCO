@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/basket -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/tv -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/computer
+CXX_INCLUDES = -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/basket -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/product -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/tv -I/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/computer
 
 CXX_FLAGS = -std=gnu++17
 

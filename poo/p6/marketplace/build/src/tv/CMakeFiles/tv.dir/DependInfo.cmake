@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/tv/tv.cc" "src/tv/CMakeFiles/tv.dir/tv.cc.o" "gcc" "src/tv/CMakeFiles/tv.dir/tv.cc.o.d"
+  "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/tv/tv.cc" "src/tv/CMakeFiles/tv.dir/tv.cc.o" "gcc" "src/tv/CMakeFiles/tv.dir/tv.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/product/CMakeFiles/product.dir/DependInfo.cmake"
+  "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/product/CMakeFiles/product.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

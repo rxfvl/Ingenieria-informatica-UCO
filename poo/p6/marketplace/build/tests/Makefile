@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests//CMakeFiles/progress.marks
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles 0
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests//CMakeFiles/progress.marks
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/person-test.dir/rule:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/person-test.dir/rule
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/person-test.dir/rule
 .PHONY : tests/CMakeFiles/person-test.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ person-test: tests/CMakeFiles/person-test.dir/rule
 
 # fast build rule for target.
 person-test/fast:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/build
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/build
 .PHONY : person-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/product-test.dir/rule:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/product-test.dir/rule
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/product-test.dir/rule
 .PHONY : tests/CMakeFiles/product-test.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ product-test: tests/CMakeFiles/product-test.dir/rule
 
 # fast build rule for target.
 product-test/fast:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/build
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/build
 .PHONY : product-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/tv-test.dir/rule:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tv-test.dir/rule
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/tv-test.dir/rule
 .PHONY : tests/CMakeFiles/tv-test.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ tv-test: tests/CMakeFiles/tv-test.dir/rule
 
 # fast build rule for target.
 tv-test/fast:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/build
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/build
 .PHONY : tv-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/computer-test.dir/rule:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/computer-test.dir/rule
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/computer-test.dir/rule
 .PHONY : tests/CMakeFiles/computer-test.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ computer-test: tests/CMakeFiles/computer-test.dir/rule
 
 # fast build rule for target.
 computer-test/fast:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/build
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/build
 .PHONY : computer-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/basket-test.dir/rule:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/basket-test.dir/rule
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/basket-test.dir/rule
 .PHONY : tests/CMakeFiles/basket-test.dir/rule
 
 # Convenience name for target.
@@ -238,15 +238,43 @@ basket-test: tests/CMakeFiles/basket-test.dir/rule
 
 # fast build rule for target.
 basket-test/fast:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/build
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/build
 .PHONY : basket-test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/client-test.dir/rule:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/client-test.dir/rule
+.PHONY : tests/CMakeFiles/client-test.dir/rule
+
+# Convenience name for target.
+client-test: tests/CMakeFiles/client-test.dir/rule
+.PHONY : client-test
+
+# fast build rule for target.
+client-test/fast:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/client-test.dir/build.make tests/CMakeFiles/client-test.dir/build
+.PHONY : client-test/fast
+
+# Convenience name for target.
+tests/CMakeFiles/seller-test.dir/rule:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/seller-test.dir/rule
+.PHONY : tests/CMakeFiles/seller-test.dir/rule
+
+# Convenience name for target.
+seller-test: tests/CMakeFiles/seller-test.dir/rule
+.PHONY : seller-test
+
+# fast build rule for target.
+seller-test/fast:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/seller-test.dir/build.make tests/CMakeFiles/seller-test.dir/build
+.PHONY : seller-test/fast
 
 basket-test.o: basket-test.cc.o
 .PHONY : basket-test.o
 
 # target to build an object file
 basket-test.cc.o:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/basket-test.cc.o
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/basket-test.cc.o
 .PHONY : basket-test.cc.o
 
 basket-test.i: basket-test.cc.i
@@ -254,7 +282,7 @@ basket-test.i: basket-test.cc.i
 
 # target to preprocess a source file
 basket-test.cc.i:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/basket-test.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/basket-test.cc.i
 .PHONY : basket-test.cc.i
 
 basket-test.s: basket-test.cc.s
@@ -262,15 +290,39 @@ basket-test.s: basket-test.cc.s
 
 # target to generate assembly for a file
 basket-test.cc.s:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/basket-test.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/basket-test.cc.s
 .PHONY : basket-test.cc.s
+
+client-test.o: client-test.cc.o
+.PHONY : client-test.o
+
+# target to build an object file
+client-test.cc.o:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/client-test.dir/build.make tests/CMakeFiles/client-test.dir/client-test.cc.o
+.PHONY : client-test.cc.o
+
+client-test.i: client-test.cc.i
+.PHONY : client-test.i
+
+# target to preprocess a source file
+client-test.cc.i:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/client-test.dir/build.make tests/CMakeFiles/client-test.dir/client-test.cc.i
+.PHONY : client-test.cc.i
+
+client-test.s: client-test.cc.s
+.PHONY : client-test.s
+
+# target to generate assembly for a file
+client-test.cc.s:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/client-test.dir/build.make tests/CMakeFiles/client-test.dir/client-test.cc.s
+.PHONY : client-test.cc.s
 
 computer-test.o: computer-test.cc.o
 .PHONY : computer-test.o
 
 # target to build an object file
 computer-test.cc.o:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/computer-test.cc.o
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/computer-test.cc.o
 .PHONY : computer-test.cc.o
 
 computer-test.i: computer-test.cc.i
@@ -278,7 +330,7 @@ computer-test.i: computer-test.cc.i
 
 # target to preprocess a source file
 computer-test.cc.i:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/computer-test.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/computer-test.cc.i
 .PHONY : computer-test.cc.i
 
 computer-test.s: computer-test.cc.s
@@ -286,7 +338,7 @@ computer-test.s: computer-test.cc.s
 
 # target to generate assembly for a file
 computer-test.cc.s:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/computer-test.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/computer-test.dir/build.make tests/CMakeFiles/computer-test.dir/computer-test.cc.s
 .PHONY : computer-test.cc.s
 
 person-test.o: person-test.cc.o
@@ -294,7 +346,7 @@ person-test.o: person-test.cc.o
 
 # target to build an object file
 person-test.cc.o:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/person-test.cc.o
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/person-test.cc.o
 .PHONY : person-test.cc.o
 
 person-test.i: person-test.cc.i
@@ -302,7 +354,7 @@ person-test.i: person-test.cc.i
 
 # target to preprocess a source file
 person-test.cc.i:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/person-test.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/person-test.cc.i
 .PHONY : person-test.cc.i
 
 person-test.s: person-test.cc.s
@@ -310,7 +362,7 @@ person-test.s: person-test.cc.s
 
 # target to generate assembly for a file
 person-test.cc.s:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/person-test.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/person-test.dir/build.make tests/CMakeFiles/person-test.dir/person-test.cc.s
 .PHONY : person-test.cc.s
 
 product-test.o: product-test.cc.o
@@ -318,7 +370,7 @@ product-test.o: product-test.cc.o
 
 # target to build an object file
 product-test.cc.o:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/product-test.cc.o
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/product-test.cc.o
 .PHONY : product-test.cc.o
 
 product-test.i: product-test.cc.i
@@ -326,7 +378,7 @@ product-test.i: product-test.cc.i
 
 # target to preprocess a source file
 product-test.cc.i:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/product-test.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/product-test.cc.i
 .PHONY : product-test.cc.i
 
 product-test.s: product-test.cc.s
@@ -334,15 +386,39 @@ product-test.s: product-test.cc.s
 
 # target to generate assembly for a file
 product-test.cc.s:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/product-test.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/product-test.dir/build.make tests/CMakeFiles/product-test.dir/product-test.cc.s
 .PHONY : product-test.cc.s
+
+seller-test.o: seller-test.cc.o
+.PHONY : seller-test.o
+
+# target to build an object file
+seller-test.cc.o:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/seller-test.dir/build.make tests/CMakeFiles/seller-test.dir/seller-test.cc.o
+.PHONY : seller-test.cc.o
+
+seller-test.i: seller-test.cc.i
+.PHONY : seller-test.i
+
+# target to preprocess a source file
+seller-test.cc.i:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/seller-test.dir/build.make tests/CMakeFiles/seller-test.dir/seller-test.cc.i
+.PHONY : seller-test.cc.i
+
+seller-test.s: seller-test.cc.s
+.PHONY : seller-test.s
+
+# target to generate assembly for a file
+seller-test.cc.s:
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/seller-test.dir/build.make tests/CMakeFiles/seller-test.dir/seller-test.cc.s
+.PHONY : seller-test.cc.s
 
 tv-test.o: tv-test.cc.o
 .PHONY : tv-test.o
 
 # target to build an object file
 tv-test.cc.o:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/tv-test.cc.o
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/tv-test.cc.o
 .PHONY : tv-test.cc.o
 
 tv-test.i: tv-test.cc.i
@@ -350,7 +426,7 @@ tv-test.i: tv-test.cc.i
 
 # target to preprocess a source file
 tv-test.cc.i:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/tv-test.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/tv-test.cc.i
 .PHONY : tv-test.cc.i
 
 tv-test.s: tv-test.cc.s
@@ -358,7 +434,7 @@ tv-test.s: tv-test.cc.s
 
 # target to generate assembly for a file
 tv-test.cc.s:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/tv-test.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tv-test.dir/build.make tests/CMakeFiles/tv-test.dir/tv-test.cc.s
 .PHONY : tv-test.cc.s
 
 # Help Target
@@ -375,13 +451,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... basket-test"
+	@echo "... client-test"
 	@echo "... computer-test"
 	@echo "... person-test"
 	@echo "... product-test"
+	@echo "... seller-test"
 	@echo "... tv-test"
 	@echo "... basket-test.o"
 	@echo "... basket-test.i"
 	@echo "... basket-test.s"
+	@echo "... client-test.o"
+	@echo "... client-test.i"
+	@echo "... client-test.s"
 	@echo "... computer-test.o"
 	@echo "... computer-test.i"
 	@echo "... computer-test.s"
@@ -391,6 +472,9 @@ help:
 	@echo "... product-test.o"
 	@echo "... product-test.i"
 	@echo "... product-test.s"
+	@echo "... seller-test.o"
+	@echo "... seller-test.i"
+	@echo "... seller-test.s"
 	@echo "... tv-test.o"
 	@echo "... tv-test.i"
 	@echo "... tv-test.s"
@@ -405,6 +489,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -302,6 +302,58 @@ basket-main/fast:
 .PHONY : basket-main/fast
 
 #=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/client.dir/build.make src/client/CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named client-main
+
+# Build rule for target.
+client-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client-main
+.PHONY : client-main
+
+# fast build rule for target.
+client-main/fast:
+	$(MAKE) $(MAKESILENT) -f src/client/CMakeFiles/client-main.dir/build.make src/client/CMakeFiles/client-main.dir/build
+.PHONY : client-main/fast
+
+#=============================================================================
+# Target rules for targets named seller
+
+# Build rule for target.
+seller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seller
+.PHONY : seller
+
+# fast build rule for target.
+seller/fast:
+	$(MAKE) $(MAKESILENT) -f src/seller/CMakeFiles/seller.dir/build.make src/seller/CMakeFiles/seller.dir/build
+.PHONY : seller/fast
+
+#=============================================================================
+# Target rules for targets named seller-main
+
+# Build rule for target.
+seller-main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seller-main
+.PHONY : seller-main
+
+# fast build rule for target.
+seller-main/fast:
+	$(MAKE) $(MAKESILENT) -f src/seller/CMakeFiles/seller-main.dir/build.make src/seller/CMakeFiles/seller-main.dir/build
+.PHONY : seller-main/fast
+
+#=============================================================================
 # Target rules for targets named person-test
 
 # Build rule for target.
@@ -365,6 +417,32 @@ basket-test: cmake_check_build_system
 basket-test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/basket-test.dir/build.make tests/CMakeFiles/basket-test.dir/build
 .PHONY : basket-test/fast
+
+#=============================================================================
+# Target rules for targets named client-test
+
+# Build rule for target.
+client-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client-test
+.PHONY : client-test
+
+# fast build rule for target.
+client-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/client-test.dir/build.make tests/CMakeFiles/client-test.dir/build
+.PHONY : client-test/fast
+
+#=============================================================================
+# Target rules for targets named seller-test
+
+# Build rule for target.
+seller-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seller-test
+.PHONY : seller-test
+
+# fast build rule for target.
+seller-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/seller-test.dir/build.make tests/CMakeFiles/seller-test.dir/build
+.PHONY : seller-test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -434,6 +512,9 @@ help:
 	@echo "... basket"
 	@echo "... basket-main"
 	@echo "... basket-test"
+	@echo "... client"
+	@echo "... client-main"
+	@echo "... client-test"
 	@echo "... computer"
 	@echo "... computer-main"
 	@echo "... computer-test"
@@ -447,6 +528,9 @@ help:
 	@echo "... product"
 	@echo "... product-main"
 	@echo "... product-test"
+	@echo "... seller"
+	@echo "... seller-main"
+	@echo "... seller-test"
 	@echo "... tv"
 	@echo "... tv-main"
 	@echo "... tv-test"

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build
 
 # Include any dependencies generated for this target.
 include src/person/CMakeFiles/person-main.dir/depend.make
@@ -72,16 +72,16 @@ include src/person/CMakeFiles/person-main.dir/flags.make
 src/person/CMakeFiles/person-main.dir/person-main.cc.o: src/person/CMakeFiles/person-main.dir/flags.make
 src/person/CMakeFiles/person-main.dir/person-main.cc.o: ../src/person/person-main.cc
 src/person/CMakeFiles/person-main.dir/person-main.cc.o: src/person/CMakeFiles/person-main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/person/CMakeFiles/person-main.dir/person-main.cc.o"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/person/CMakeFiles/person-main.dir/person-main.cc.o -MF CMakeFiles/person-main.dir/person-main.cc.o.d -o CMakeFiles/person-main.dir/person-main.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/person/person-main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/person/CMakeFiles/person-main.dir/person-main.cc.o"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/person && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/person/CMakeFiles/person-main.dir/person-main.cc.o -MF CMakeFiles/person-main.dir/person-main.cc.o.d -o CMakeFiles/person-main.dir/person-main.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/person/person-main.cc
 
 src/person/CMakeFiles/person-main.dir/person-main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/person-main.dir/person-main.cc.i"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/person/person-main.cc > CMakeFiles/person-main.dir/person-main.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/person && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/person/person-main.cc > CMakeFiles/person-main.dir/person-main.cc.i
 
 src/person/CMakeFiles/person-main.dir/person-main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/person-main.dir/person-main.cc.s"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/person/person-main.cc -o CMakeFiles/person-main.dir/person-main.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/person && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/person/person-main.cc -o CMakeFiles/person-main.dir/person-main.cc.s
 
 # Object files for target person-main
 person__main_OBJECTS = \
@@ -94,18 +94,18 @@ src/person/person-main: src/person/CMakeFiles/person-main.dir/person-main.cc.o
 src/person/person-main: src/person/CMakeFiles/person-main.dir/build.make
 src/person/person-main: src/person/libperson.a
 src/person/person-main: src/person/CMakeFiles/person-main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable person-main"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/person-main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable person-main"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/person && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/person-main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/person/CMakeFiles/person-main.dir/build: src/person/person-main
 .PHONY : src/person/CMakeFiles/person-main.dir/build
 
 src/person/CMakeFiles/person-main.dir/clean:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person && $(CMAKE_COMMAND) -P CMakeFiles/person-main.dir/cmake_clean.cmake
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/person && $(CMAKE_COMMAND) -P CMakeFiles/person-main.dir/cmake_clean.cmake
 .PHONY : src/person/CMakeFiles/person-main.dir/clean
 
 src/person/CMakeFiles/person-main.dir/depend:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/person /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/person/CMakeFiles/person-main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/person /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/person /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/person/CMakeFiles/person-main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/person/CMakeFiles/person-main.dir/depend
 

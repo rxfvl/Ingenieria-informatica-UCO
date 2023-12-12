@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/google/googletest.git" "GIT_TAG" "v1.14.0"
-                    SOURCE_DIR          "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/_deps/googletest-src"
-                    BINARY_DIR          "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/_deps/googletest-build"
+                    SOURCE_DIR          "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/_deps/googletest-src"
+                    BINARY_DIR          "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

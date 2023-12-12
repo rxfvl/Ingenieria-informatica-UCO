@@ -1,4 +1,4 @@
-# Install script for directory: /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
+# Install script for directory: /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/src/cmake_install.cmake")
-  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/src/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

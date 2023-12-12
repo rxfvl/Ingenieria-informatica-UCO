@@ -1,8 +1,8 @@
 src/basket/CMakeFiles/basket-main.dir/basket-main.cc.o: \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/basket/basket-main.cc \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/basket/basket-main.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/basket/basket.h \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/product/product.h \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/basket/basket.h \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/product/product.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

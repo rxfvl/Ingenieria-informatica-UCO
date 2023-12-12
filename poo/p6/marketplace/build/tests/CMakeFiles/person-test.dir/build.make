@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/person-test.dir/depend.make
@@ -72,16 +72,16 @@ include tests/CMakeFiles/person-test.dir/flags.make
 tests/CMakeFiles/person-test.dir/person-test.cc.o: tests/CMakeFiles/person-test.dir/flags.make
 tests/CMakeFiles/person-test.dir/person-test.cc.o: ../tests/person-test.cc
 tests/CMakeFiles/person-test.dir/person-test.cc.o: tests/CMakeFiles/person-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/person-test.dir/person-test.cc.o"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/person-test.dir/person-test.cc.o -MF CMakeFiles/person-test.dir/person-test.cc.o.d -o CMakeFiles/person-test.dir/person-test.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/tests/person-test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/person-test.dir/person-test.cc.o"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/person-test.dir/person-test.cc.o -MF CMakeFiles/person-test.dir/person-test.cc.o.d -o CMakeFiles/person-test.dir/person-test.cc.o -c /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/tests/person-test.cc
 
 tests/CMakeFiles/person-test.dir/person-test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/person-test.dir/person-test.cc.i"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/tests/person-test.cc > CMakeFiles/person-test.dir/person-test.cc.i
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/tests/person-test.cc > CMakeFiles/person-test.dir/person-test.cc.i
 
 tests/CMakeFiles/person-test.dir/person-test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/person-test.dir/person-test.cc.s"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/tests/person-test.cc -o CMakeFiles/person-test.dir/person-test.cc.s
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/tests/person-test.cc -o CMakeFiles/person-test.dir/person-test.cc.s
 
 # Object files for target person-test
 person__test_OBJECTS = \
@@ -98,18 +98,18 @@ tests/person-test: lib/libgmock_main.a
 tests/person-test: lib/libgmock.a
 tests/person-test: lib/libgtest.a
 tests/person-test: tests/CMakeFiles/person-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable person-test"
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/person-test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable person-test"
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/person-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/person-test.dir/build: tests/person-test
 .PHONY : tests/CMakeFiles/person-test.dir/build
 
 tests/CMakeFiles/person-test.dir/clean:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/person-test.dir/cmake_clean.cmake
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/person-test.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/person-test.dir/clean
 
 tests/CMakeFiles/person-test.dir/depend:
-	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/tests /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/build/tests/CMakeFiles/person-test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/tests /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/build/tests/CMakeFiles/person-test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/person-test.dir/depend
 

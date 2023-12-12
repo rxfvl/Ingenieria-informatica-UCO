@@ -1,7 +1,7 @@
 src/person/CMakeFiles/person-main.dir/person-main.cc.o: \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/person/person-main.cc \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/person/person-main.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p5/marketplace/src/person/person.h \
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p6/marketplace/src/person/person.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
