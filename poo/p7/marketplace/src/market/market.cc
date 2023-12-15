@@ -91,14 +91,14 @@ bool Market::AddProductSeller(Product p, std::string id_seller)
 bool Market::AddProductClient(Product p, std::string id_client)
 {
     std::vector<std::string> ids;
-    for (auto it = seller_list.begin(); i != seller_list.end(); ++it)
+    for (auto it = seller_list_.begin(); it != seller_list_.end(); ++it)
     {
         ids = it->GetIds();
         for (auto it2 = ids.begin(); it2 != ids.end(); ++it2)
         {
-            if (p.GetId() == it2->GetId)
+            if (p.GetId() == *it2)
             {
-                for (auto it3 = clients_list_.begin(); it3 != client_list_.end(); ++it3)
+                for (auto it3 = client_list_.begin(); it3 != client_list_.end(); ++it3)
                 {
                     if (it3->GetId() == id_client)
                     {
@@ -122,7 +122,7 @@ bool Market::DeleteProductSeller(Product p, std::string id_seller)
             ids = it->GetIds();
             for (auto it2 = ids.begin(); it2 != ids.end(); ++it2)
             {
-                if (p.GetId() == it2->GetId())
+                if (p.GetId() == *it2)
                 {
                     it->DeleteProduct(p);
                     return true;
@@ -131,4 +131,41 @@ bool Market::DeleteProductSeller(Product p, std::string id_seller)
         }
     }
     return false;
+}
+
+bool Market::DeleteProductClient(Product p, std::string id_client)
+{
+    std::vector<std::string> ids;
+    for (auto it = client_list_.begin(); it != client_list_.end(); ++it)
+    {
+        if (it->GetId() == id_client)
+        {
+            ids = it->GetIds();
+            for (auto it2 = ids.begin(); it2 != ids.end(); ++it2)
+            {
+                if (p.GetId() == *it2)
+                {
+                    it->DeleteProduct(p);
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+}
+
+float Market::GetMoneyInBasket()
+{
+    float total = 0;
+    for (auto it = client_list_.begin(); it != client_list_.end(); ++it)
+    {
+        total += it->GetTotal();
+    }
+
+    for (auto it = seller_list_.begin(); it != seller_list_.end(); ++it)
+    {
+        total += it->GetTotal();
+    }
+
+    return total;
 }
