@@ -87,3 +87,48 @@ bool Market::AddProductSeller(Product p, std::string id_seller)
 
     return false;
 }
+
+bool Market::AddProductClient(Product p, std::string id_client)
+{
+    std::vector<std::string> ids;
+    for (auto it = seller_list.begin(); i != seller_list.end(); ++it)
+    {
+        ids = it->GetIds();
+        for (auto it2 = ids.begin(); it2 != ids.end(); ++it2)
+        {
+            if (p.GetId() == it2->GetId)
+            {
+                for (auto it3 = clients_list_.begin(); it3 != client_list_.end(); ++it3)
+                {
+                    if (it3->GetId() == id_client)
+                    {
+                        it3->AddProduct(p);
+                        return true;
+                    }
+                }
+            }
+        }
+    }
+    return false;
+}
+
+bool Market::DeleteProductSeller(Product p, std::string id_seller)
+{
+    std::vector<std::string> ids;
+    for (auto it = seller_list_.begin(); it != seller_list_.end(); ++it)
+    {
+        if (it->GetId() == id_seller)
+        {
+            ids = it->GetIds();
+            for (auto it2 = ids.begin(); it2 != ids.end(); ++it2)
+            {
+                if (p.GetId() == it2->GetId())
+                {
+                    it->DeleteProduct(p);
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+}
