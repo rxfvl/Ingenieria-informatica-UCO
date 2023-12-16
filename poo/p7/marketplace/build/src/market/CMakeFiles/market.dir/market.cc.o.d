@@ -172,4 +172,8 @@ src/market/CMakeFiles/market.dir/market.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/src/seller/seller.h
+ /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/src/seller/seller.h \
+ /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc
