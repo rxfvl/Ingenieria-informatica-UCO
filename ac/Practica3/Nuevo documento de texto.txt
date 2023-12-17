@@ -1,0 +1,11 @@
+t3 SP-1->SP
+t4 SP->MAR
+t5 GPR->M
+t6 GPR(AD)->MAR
+t7 ACC->GPR
+t8 GPR->M
+t9 SP->MAR
+t10 M->GPR / SP+1->SP
+t11 GPR+1->GPR
+t12 GPR(AD)->MAR
+t13 QR->M

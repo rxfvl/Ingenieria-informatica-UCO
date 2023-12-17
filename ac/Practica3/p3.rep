@@ -1,0 +1,7 @@
+HALT false 0 q0
+LDA true 2 q1
+LDQ true 1 q2
+STA true 2 q3
+STQ true 1 q4
+LDAQ true 5 q5
+STAQ true 11 q6

@@ -1,0 +1,13 @@
+0 1
+1 5
+2 0
+@
+3
+@
+CRA
+ADD 0
+JMPR 2
+HALT
+ADD 1
+STA 2
+HALT
