@@ -5,3 +5,5 @@ STA true 2 q3
 STQ true 1 q4
 LDAQ true 5 q5
 STAQ true 11 q6
+ZEROS32 true 6 q7
+PARAQ true 15 q8
