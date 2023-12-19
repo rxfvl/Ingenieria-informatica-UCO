@@ -104,6 +104,7 @@ bool Market::AddProductClient(Product p, std::string id_client)
                     if (it3->GetId() == id_client)
                     {
                         it3->AddProduct(p);
+                        it->DeleteProduct(p);
                         return true;
                     }
                 }
@@ -136,7 +137,6 @@ bool Market::DeleteProductSeller(Product p, std::string id_seller)
 
 bool Market::DeleteProductClient(Product p, std::string id_client)
 {
-    std::vector<std::string> ids;
     for (auto it = client_list_.begin(); it != client_list_.end(); ++it)
     {
         if (it->GetId() == id_client)
