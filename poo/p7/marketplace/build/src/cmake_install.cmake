@@ -52,6 +52,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/client/cmake_install.cmake")
   include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/seller/cmake_install.cmake")
   include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/market/cmake_install.cmake")
+  include("/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/cmake_install.cmake")
 
 endif()
 

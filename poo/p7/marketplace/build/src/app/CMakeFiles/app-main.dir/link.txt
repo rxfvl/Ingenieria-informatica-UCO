@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/app-main.dir/app-main.cc.o -o app-main  libapp.a ../market/libmarket.a ../client/libclient.a ../seller/libseller.a ../person/libperson.a ../basket/libbasket.a ../tv/libtv.a ../computer/libcomputer.a ../product/libproduct.a 

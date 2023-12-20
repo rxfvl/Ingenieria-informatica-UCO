@@ -182,14 +182,14 @@ bool Market::DumpMarket(int outmode)
                 qs = it-> GetQs();
                 for (auto it2 = ids.begin(); it2 != ids.end(); ++it2)
                 {
-                    archivo << "|" << it->GetId() << "\t|" << *it2 << "\t|" << qs[i] << "\t|\n";
+                    archivo << "|" << it->GetId() << "\t\t|" << *it2 << "\t\t|" << qs[i] << "\t\t|\n";
                     i++;
 
                 }
                 i = 0;
             }
             archivo << "|-----------------------------------------------|\n";
-            archivo << "|TOTAL: " << GetMoneyInBasket() << "\t\t|\n";
+            archivo << "|TOTAL: " << GetMoneyInBasket() << "\t\t\t\t\t|\n";
             archivo << "|-----------------------------------------------|\n";
 
             archivo.close();

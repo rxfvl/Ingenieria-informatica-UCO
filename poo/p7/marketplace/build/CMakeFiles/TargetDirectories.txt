@@ -84,6 +84,15 @@
 /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/market/CMakeFiles/install.dir
 /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/market/CMakeFiles/install/local.dir
 /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/market/CMakeFiles/install/strip.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/app.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/app-main.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/test.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/edit_cache.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/rebuild_cache.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/list_install_components.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/install.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/install/local.dir
+/home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/src/app/CMakeFiles/install/strip.dir
 /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/tests/CMakeFiles/person-test.dir
 /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/tests/CMakeFiles/product-test.dir
 /home/rafa/Escritorio/Ingenieria-informatica-UCO/poo/p7/marketplace/build/tests/CMakeFiles/tv-test.dir
