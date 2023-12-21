@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/basket-main.dir/basket-main.cc.o -o basket-main  libbasket.a ../tv/libtv.a ../computer/libcomputer.a ../product/libproduct.a 

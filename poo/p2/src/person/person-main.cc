@@ -45,6 +45,7 @@ int main()
 
 	p1.ChangePreference(pos, pref);
 	p1.ShowPreferences();
+	std::cout << "-- FIN --\n";
 
 	return 0;
 }

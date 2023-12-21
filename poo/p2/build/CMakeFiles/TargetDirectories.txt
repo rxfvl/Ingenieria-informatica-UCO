@@ -1,8 +1,0 @@
-/home/rafa/Escritorio/poo/p2/build/CMakeFiles/edit_cache.dir
-/home/rafa/Escritorio/poo/p2/build/CMakeFiles/rebuild_cache.dir
-/home/rafa/Escritorio/poo/p2/build/src/CMakeFiles/edit_cache.dir
-/home/rafa/Escritorio/poo/p2/build/src/CMakeFiles/rebuild_cache.dir
-/home/rafa/Escritorio/poo/p2/build/src/person/CMakeFiles/person.dir
-/home/rafa/Escritorio/poo/p2/build/src/person/CMakeFiles/person-main.dir
-/home/rafa/Escritorio/poo/p2/build/src/person/CMakeFiles/edit_cache.dir
-/home/rafa/Escritorio/poo/p2/build/src/person/CMakeFiles/rebuild_cache.dir
