@@ -1,0 +1,104 @@
+FETCH
+t0 PC->MAR
+t1 M->GPR // PC+1->PC
+t2 GPR(OP)->OPR // GPR(AD)->MAR
+
+HALT (q0)
+
+LDA (q1)
+t3 M->GPR // 0->ACC
+t4 GPR+ACC->ACC (LOAD SR->t4·q1-0)
+
+LDQ (q2)
+t3 M->QR (LOAD SR->t3·q2-0)
+
+STA (q3)
+t3 ACC->GPR
+t4 GPR->M (LOAD SR->t4·q3-0)
+
+STQ (q4)
+t3 QR->M (LOAD SR->t3·q4-0)
+
+LDAQ (q5)
+t3 M->QR // 0->ACC
+t4 GPR+1->GPR
+t5 GPR(AD)->MAR
+t6 QR->GPR
+t7 GPR+ACC->ACC // M->QR (LOAD SR->t7·q5-0)
+
+STAQ (q6)
+t3 SP-1->SP
+t4 SP->MAR
+t5 GPR->M
+t6 GPR(AD)->MAR
+t7 ACC->GPR
+t8 GPR->M
+t9 SP->MAR
+t10 M->GPR / SP+1->SP
+t11 GPR+1->GPR
+t12 GPR(AD)->MAR
+t13 QR->M (LOAD SR->t13·q6-0)
+
+ZEROS32 (q7)
+t3 QR->M // 31->SC
+t4 0->QR // 0->F
+t5 QR->GPR // M->QR
+t6 ROL FAQ // SC-1->SC
+t7·F' GPR+1->GPR (Zsc=0-> t7·q7-6, Zsc=1-> t7·q7 -->SR+1->SR)
+t8 ROL FAQ // GPR->M
+t9 ROL FAQ (RESTAURA) (LOAD SR->t9·q7-0)
+
+PARAQ (q8)
+t3 QR -> M // SP-1->SP 
+t4 GPR -> QR // SP -> MAR
+t5 ACC -> GPR
+t6 GPR -> M // QR -> GPR
+t7 GPR(AD) -> MAR // 16->SC // 0 -> QR
+t8 QR -> GPR
+t9 ROL FAQ // SC-1->SC
+t10·F GPR+1->GPR (Zsc=0->t10·q8-9, Zsc=1-> t10·q8 --> SR+1->SR)
+t11 GPR -> QR // 0 -> ACC
+t12·Qn ACC+1->ACC
+t13 M->QR // ACC->GPR
+t14 GPR->M
+t15 SP->MAR // 0->ACC
+t16 M->GPR
+t17 GPR->ACC // SP+1->SP (LOAD SR->t17·q8-0)
+
+ADDAQ (q9)
+
+ // GUARDA GPR(dir) y ACC en pila
+
+t3 SP-1->SP
+t4 SP->MAR
+t5 GPR->M // SP-1->SP
+t6 SP->MAR // ACC->GPR
+t7 GPR->M // SP+1->SP
+t8 SP->MAR
+
+ // Restaura dir y hace dir + 1, suma(dir+1)->ACC
+ 
+t9 M->GPR
+t10 GPR+1->GPR
+t11 GPR(AD)->MAR
+t12 QR->GPR // 0->ACC
+t13 GPR+ACC->ACC
+t14 M->GPR
+t15 GPR+ACC->ACC
+t16 ACC->GPR
+
+ // (QR+(dir+1))->QR
+
+t17 GPR->QR // SP-1->SP
+t18 SP->MAR // 0->ACC
+t19·F ACC+1->ACC (Si la suma tiene acarreo, ACC+1->ACC)
+
+ // Restaura ACC y dir y dir+ACC->ACC
+
+t20 M->GPR
+t21 GPR+ACC->ACC // SP+1->SP
+t22 SP->MAR
+t23 M->GPR
+t24 GPR(AD)->MAR // SP+1->SP
+t25 M->GPR
+t26 GPR+ACC->ACC (LOAD SR->t26·q9-0)
