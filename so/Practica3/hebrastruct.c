@@ -27,7 +27,7 @@ void* h1(void* entry)
 int main()
 {
     
-    pthread_mutex_t sem = PTHREAD_MUTEX_INITIALIZER;
+    pthread_mutex_t sem = PTHREAD_MUTEX_INITIALIZER; // PONER * EN EL SEMAFORO --> pthread_mutex_t *sem;
     int global = 0;
     pthread_t hebras[2];
     struct mystruct ms[2];
