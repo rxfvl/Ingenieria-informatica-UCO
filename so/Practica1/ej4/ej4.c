@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
         {
             printf("Soy el hijo %d, con pid %d, del padre %d\n", i+1, getpid(), getppid());
             printf("Abriendo Calculadora...\n");
-            if (execlp("gnome-calculator", "gnome-calculator", NULL) == -1)
+            if (execlp("gnome-calculator", "gnome-calculator", NULL))
             {
                 perror("exe\n");
                 printf("Errno value = %d\n", errno);
@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
             printf("Soy el hijo %d, con pid %d, del padre %d\n", i+1, getpid(), getppid());
             printf("Abriendo GEdit...\n");
 
-            if (execvp("gedit", argv) < 0 )
+            if (execvp("gedit", argv))
             {
                 perror("exe\n");
                 printf("Errno value = %d\n", errno);
